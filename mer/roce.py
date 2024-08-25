@@ -13,6 +13,7 @@ def basic(stm: Statement):
         if 0 in [profit_bef_tax, total_asset, curr_liabilities]:
             raise Exception()
 
+        # result = ebit / (total_asset - curr_liabilities) * 100
         result = (
             (profit_bef_tax + interest_expense) / (total_asset - curr_liabilities) * 100
         )

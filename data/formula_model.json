@@ -1,0 +1,31 @@
+{
+    "_id": "ObjectId",
+    "name": "string",
+    "slug": "string",
+    "description": "string",
+    "category": "string",
+    "library": [
+        {
+            "expression": "string",
+            "parameters": [
+                {
+                    "name": "string",
+                    "slug": "string",
+                    "description": "string",
+                    "data_source": {
+                        "type": "string",
+                        "location": "string"
+                    },
+                    "constraints": {
+                        "allow_zero": "boolean",
+                        "allow_negative": "boolean",
+                        "min_value": "number",
+                        "max_value": "number"
+                    }
+                }
+            ]
+        }
+    ],
+    "created_at": "date",
+    "updated_at": "date"
+}

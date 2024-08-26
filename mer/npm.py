@@ -15,8 +15,8 @@ def basic(stm: Statement):
 
 def secondary(stm: Statement):
     try:
-        net_profit = abs(int(stm.income["Net Profit For the Year"]))
-        revenue = abs(int(stm.income["Total operating revenue"]))
+        net_profit = int(stm.income["Net Profit For the Year"])
+        revenue = int(stm.income["Total operating revenue"])
         return net_profit / revenue * 100
     except:
         return None
@@ -24,9 +24,9 @@ def secondary(stm: Statement):
 
 def third(stm: Statement):
     try:
-        net_profit = abs(int(stm.income["Net Profit For the Year"]))
-        sales = abs(int(stm.income["Sales"]))
-        deduction = abs(int(stm.income["Sales deductions"]))
+        net_profit = int(stm.income["Net Profit For the Year"])
+        sales = int(stm.income["Sales"])
+        deduction = int(stm.income["Sales deductions"])
         return net_profit / (sales - deduction) * 100
     except:
         return None
